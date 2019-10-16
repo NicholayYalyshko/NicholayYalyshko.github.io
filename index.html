@@ -18,41 +18,42 @@
                 <div class="contacts__graph">График работы</div>
                </div>
            </div>
-       </header>  
-        <div class="main">
-            <div class="container>"
+       </header> 
+
+        <div class="page-content">
+            <div class="container">
                 <aside class="sidebar">
-                    <nav class="menu">
-                        <div class="menu__content">
+                    <div class="main__content">
+                        <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <img src="/icon/main_icon.jpg" alt="Menu-badge" class="main__icon">
-                                    <a href="#" class="menu__link">Главная</a>
+                                    <img src="" alt="" class="main__icon">
+                                    <a href="#" class="menu__link menu__link--icon--main menu__link--active">Главная</a>
                                 </li>
                                 <li class="manu__item">
-                                    <img src="/icon/feed_icon.jpg" alt="Menu-badge" class="feed__icon">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <img src="" alt="" class="feed__icon">
+                                    <a href="#" class="menu__link menu__link--icon--fead menu__link--active">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <img src="/icon/team_icon.jpg" alt="Menu-badge" class="team__icon">
-                                    <a href="#" class="menu__link">Экипаж</a>
+                                    <img src="" alt="" class="team__icon">
+                                    <a href="#" class="menu__link menu__link--icon--team menu__link--active">Экипаж</a>
                                 </li>
                             </ul>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </aside>
                 <main class="main__content">
                     <section class="main-pictures">
-                        <img src="/img/Plain/Plain.jpg" alt="plain" class=main__img>
+                        <img class="main-pictures__pictures" src="/img/Plain/Plain.jpg" alt="plain" class=main__img>
                     </section>
                     <section class="features">
-                        <h2 class="features__title">Тарифы</h2>
+                        <h2 class="features__title-title">Тарифы</h2>
                         <ul class="features__list">
                             <li class="features__item">
-                                <div class="features__icon">
-                                    <img src="../.." alt="Image" class="features__icon-img">
+                                <div class="features__icon-box">
+                                    <img src="/flower/flower-eps.jpg" alt="Image" class="features__icon-img">
                                 </div>
-                                <h5 class="features__title">Стандарт</h5>
+                                <h5 class="features__title title">Стандарт</h5>
                                 <p class="feactures__text">Создан для вашего комфортного отдыха</p>
                                 <ul class="features__list"> 
                                     <li class="features__desc-item">Питание включено</li> 
@@ -62,8 +63,8 @@
                                 <p class="feactures__price"><span>$</span>19</p>
                             </li>
                             <li class="features__item">
-                                <div class="features__icon">
-                                    <img src="../.." alt="Image" class="features__icon-img">
+                                <div class="features__icon-box">
+                                    <img src="/flower/mark-as-favorite-star-eps.jpg" alt="Image" class="features__icon-img">
                                 </div>
                                 <h5 class="features__title">Премиум</h5>
                                 <p class="feactures__text">Для любителей хороших впечатлений</p>
@@ -75,8 +76,8 @@
                                 <p class="feactures__price"><span>$</span>19</p>
                             </li>
                             <li class="features__item">
-                                <div class="features__icon">
-                                    <img src="../.." alt="Image" class="features__icon-img">
+                                <div class="features__icon-box">
+                                    <img src="/flower/painter-palette-eps.jpg" alt="Image" class="features__icon-img">
                                 </div>
                                 <h5 class="features__title">Лакшери</h5>
                                 <p class="feactures__text">Всё самое лучшее и незабываемое</p>
@@ -91,11 +92,11 @@
                     </section>
                 
                     <section class="news">
-                        <h2 class="news__title">Последние новости</h2>
+                        <h2 class="title__news title">Последние новости</h2>
                             <ul class="news__list">
                                 <li class="news__item">
                                     <div class="block-content__img">
-                                            <img src="../.." alt="Icon" class="block-content__img-icon">
+                                            <img src="/photo/planeflying1.jpg" alt="Icon" class="news__icon">
                                     </div>
                                     <div class="mews__desc">
                                         <span class="block-content__date">12.10.2016</span>
@@ -113,7 +114,7 @@
                                 <hr>
                                 <li class="news__item">
                                     <div class="block-content__img">
-                                                <img src="../.." alt="Icon" class="block-content__img-icon">
+                                                <img src="/photo/Photo.jpg" alt="Icon" class="news__icon">
                                     </div>
                                     <div class="mews__desc">
                                         <span class="block-content__date">12.10.2016</span>
@@ -130,7 +131,7 @@
                                 <hr>
                                 <li class="news__item">
                                     <div class="block-content__img">
-                                            <img src="../.." alt="Icon" class="block-content__img-icon">
+                                            <img src="/photo/Layer 5.jpg" alt="Icon" class="news__icon">
                                     </div>
                                     <div class="mews__desc">
                                         <span class="block-content__date">12.10.2016</span>
@@ -181,45 +182,47 @@
                 </div>
             </div>
             <footer class="footer">
-                <div class="footer__text">
-                    Сделано с любовью и старанием на курсе HTML + CSS 
-                </div>
-                <a href="#" class="logo">
-                    <span class="logo__text">
-                        Planet
-                    </span>
-                </a>
-                <div class="socials">
+                <div class="container footer__container">
+                    <div class="footer__text">
+                    <p>Сделано с любовью и старанием на курсе HTML + CSS<br>
+                    "на курсе «HTML + CSS» в "<a href="https://loftschool.com">LoftSchool</a>.
+                    Автор работы: <b>Ялышко Николай</b> </p>
+                    </div>
+                        <a href="" class="logo">
+                            <img src="/img/logo/logo.jpg" alt="logo" class="logo__pictures">
+                        </a>
+                    <div class="socials">
                     <div class="socials__title">
                         Наши социальные сети
                     </div>
-                    <ul class="socials__list">
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <img src="../.." alt="Icon" class="socials__icon">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <img src="../.." alt="Icon" class="socials__icon">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <img src="../.." alt="Icon" class="socials__icon">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <img src="../.." alt="Icon" class="socials__icon">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <img src="../.." alt="Icon" class="socials__icon">
-                            </a>
-                        </li>
-                    </ul>
+                        <ul class="socials__list">
+                            <li class="socials__box-footer">
+                                <a href="#" class="socials__link">
+                                    <img src="/okrug/icon-mail.jpg" alt="Icon" class="socials__icon">
+                                </a>
+                            </li>
+                            <li class="socials__box-footer">
+                                <a href="#" class="socials__link">
+                                    <img src="/okrug/icon-facebook.jpg" alt="Icon" class="socials__icon">
+                                    </a>
+                            </li>
+                            <li class="socials__box-footer">
+                                <a href="#" class="socials__link">
+                                    <img src="/okrug/icon-google.jpg" alt="Icon" class="socials__icon">
+                                </a>
+                            </li>
+                            <li class="socials__box-footer">
+                                <a href="#" class="socials__link">
+                                    <img src="/okrug/icon-twitter.jpg" alt="Icon" class="socials__icon">
+                                </a>
+                            </li>
+                            <li class="socials__box-footer">
+                                <a href="#" class="socials__link">
+                                    <img src="/okrug/icon-mail.jpg" alt="Icon" class="socials__icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </footer> 
         </div>         
