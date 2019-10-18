@@ -1,4 +1,5 @@
 
+
 *{
     box-sizing: border-box;
 }
@@ -60,17 +61,19 @@ a{
 }
 
 .contacts__graph{
-    opacity: 0.7;
-    color: #ffffff;
+    color: #d4dbea;
     font-size: 14px;
     font-weight: 700;
     text-align: right;
     text-decoration: underline;
 }
 /*Боковое меню*/
-.main-content,
+
 .sidebar{
-    width: 890px;
+    width: 200px;
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .main__content{
@@ -79,12 +82,7 @@ a{
     width: 890px;
 }
 
-.sidebar{
-    width: 200px;
-}
-
 .menu__list{
-    margin-top: 15px;
     list-style: none;
     padding: 0px;
 }
@@ -110,21 +108,26 @@ a{
     margin-right: 18px;
 }
 
+.menu__link--active{
+    color: #221f1f;
+}
+
 .menu__link--icon--main:before {
-    background-image: url(/icon/main_icon.jpg);
+    background-image: url(icon/main_icon.png);
 }
 
 .menu__link--icon--fead:before {
-    background-image: url(/icon/feed_icon.jpg);
+    background-image: url(icon/feed_icon.png);
 }
 
 .menu__link--icon--team:before {
-    background-image: url(/icon/team_icon.jpg);
+    background-image: url(icon/team_icon.png);
 }
 
 
 .main-pictures__pictures{
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .features__title-title {
@@ -132,28 +135,50 @@ a{
     font-size: 49px;
     font-weight: 700;
     margin-top: 15px;
-    text-transform: uppercase;
 }
 
 .features__list {
-    margin-top: 27px;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    margin-top: 27px;
     padding-left: 0;
+}
+
+.features__desc-list{
+    text-align: left;
+    list-style: none;
+}
+
+.features__desc-item:before{
+    content:'';
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #212121;
+    vertical-align: middle;
+    margin-right: 15px;
 }
 
 .features__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
+    width: 32%;
     text-align: center;
     padding: 40px 35px 40px 25px;
     border: 1px solid transparent;
 }
 
-.features__title {
+.features__item:last-child{
+    margin-right: 0;
+}
+
+.features__item--active{
+    border-color: #e8e9ed;
+    border-radius: 10px;
+}
+
+.features__desc-title {
     color: #212121;
     font-size: 11px;
     font-weight: 700;
@@ -162,26 +187,42 @@ a{
     margin-top: 35px;
 }
 
+.features__desc-text {
+    margin-top: 28px;
+}
+
+.features__desc-text,
+.features__desc-item {
+    color: #221f1f;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.48em;
+}
+    
+.title{
+    color: #212121;
+    font-size: 49px;
+    font-weight: 700;
+    letter-spacing: 2.88px;
+}
+.features__title {
+    margin-top: 35px;
+}
+
 .features__text {
     margin-top: 28px;
 }
 
-.features__icon-box {
-    width: 70px;
-    height: 70px;
-    background-color: #4b73b5;
-    border-radius: 50%
-}
-
-.features__icon-img{
-    position: absolute;
-    background-color: #ffffff;
-}
+/* Image*/
 
 .features__icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #4b73b5;
+    border-radius: 50%
 }
 
 .feactures__price {
@@ -193,10 +234,6 @@ a{
 
 .feactures__price span {
     font-size: 30px;
-}
-
-.title__news title {
-    margin-top: 60px;
 }
 
 .news__list {
@@ -216,10 +253,22 @@ a{
     margin-top: 0;
 }
 
-.news__icon {
+.block-content__img{
+    height: 160px;
+    width: 160px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
     margin-right: 20px;
-    border-radius: 50%
 }
+
+.news__icon{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .news__desc {
     width: 650px;
@@ -228,28 +277,30 @@ a{
     justify-content: space-between;
 }
 
-.news__date {
+.block-content__date {
     color: #221f1f;
     font-size: 18px;
     font-weight: 300;
 }
 
 .news__name {
-    font-family: "Roboto -Bolt";
+    font-family: "Roboto - Bold";
     font-weight: 700;
     line-height: 21px;
+    font-size: 20px;
 }
 
 .news__text {
     font-family: "Roboto Light";
     font-weight: 300;
     line-height: 1.42em;
+    font-size: 20px;
 }
 
 hr {
     width: 100%;
     height: 1px;
-    background-color: #f5f5f5;
+    background-color:#e8e9ed;
     margin-top: 25px;
 }
 
@@ -284,9 +335,14 @@ hr {
 
 .pagination__item--active {
     border-radius: 5px;
-    background-color: #4b73b5;
-    color: #fff;
+    background-color: #4b75be;
+    color: rgb(248, 238, 238);
     padding: 8px 10px;
+}
+
+.pagination__link:hover{
+    color: #2177c7;
+    
 }
 
 .pagination__link,
